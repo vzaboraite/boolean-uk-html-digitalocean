@@ -4,8 +4,899 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Ocean</title>
+
     <link rel="stylesheet" href="/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <title>Digital Ocean</title>
   </head>
-  <body></body>
+  <body>
+    <!-- TODO: header as a three-col-grid -->
+    <header>
+      <div>
+        <img src="assets/img/png/logo.png" alt="DigitalOcean logo" />
+      </div>
+      <nav>
+        <ul>
+          <!-- TODO: Products nav dropdown or just add down-arrow-icon v -->
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Customers</a></li>
+          <!-- TODO: Comunity nav dropdown or just add down-arrow-icon v -->
+          <li><a href="#">Comunity</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+
+      <nav>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <!-- TODO: Support nav as dropdown or just add down-arrow-icon v -->
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Login</a></li>
+          <!-- TODO: Style Sign Up as a button -->
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- TODO: Section-one as two-col-grid -->
+      <section>
+        <h1>The simplest cloud platform for developers & teams</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia
+          eos harum cum a soluta! Rem, modi? Est consequatur rem exercitationem
+          delectus blanditiis, neque adipisci, sint ratione commodi vero non.
+        </p>
+
+        <form id="sign-up-form">
+          <label for="email" name="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+
+          <label for="password" name="password"></label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="6"
+            maxlength="12"
+            placeholder="Password"
+            required
+          />
+
+          <div class="action-buttons">
+            <button type="submit">Create your account</button>
+            <button type="submit">
+              <a href="#">
+                <img src="assets/img/png/google-icon.png" alt="Google icon" />
+                Sign up with google
+              </a>
+            </button>
+          </div>
+
+          <p>
+            By signing up you agree to the <a href="#">Terms of Service</a>.
+          </p>
+        </form>
+      </section>
+
+      <!-- TODO: Think of the imgs layout -->
+      <section>
+        <h2>Innovative businesses trust DigitalOcean</h2>
+
+        <!-- TODO: google and add logos to assets -->
+        <img
+          src="assets/img/png/company-logos/docker-logo.png"
+          alt="Docker logo"
+        />
+        <img
+          src="assets/img/png/company-logos/gitlab-logo-gray-rgb.png"
+          alt="GitLab logo"
+        />
+        <img
+          src="assets/img/png/company-logos/Slack-Logo.png"
+          alt="Slack logo"
+        />
+        <img
+          src="assets/img/png/company-logos/hashicorp-logo.png"
+          alt="HashiCorp logo"
+        />
+        <img
+          src="assets/img/png/company-logos/Splunk_logo.png"
+          alt="Splunk logo"
+        />
+
+        <a href="#">View customer stories ></a>
+      </section>
+
+      <section>
+        <h2>Deploy and scale seamlessly</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+          placeat dolore! Ut maxime vero architecto molestiae, cumque eveniet
+          enim neque debitis et id cupiditate nisi porro exercitationem
+          voluptate qui dolorem.
+        </p>
+
+        <aside>
+          <ul>
+            <li>Deploy</li>
+            <li>Manage</li>
+            <li>Secure</li>
+            <li>Scale</li>
+            <li>Monitor</li>
+          </ul>
+        </aside>
+
+        <!-- TODO: think of the layout: two-row/two-col grid?  -->
+        <div>
+          <!-- Subsections -->
+          <section>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient
+                  x1="50%"
+                  y1="93.571%"
+                  x2="50%"
+                  y2="-.778%"
+                  id="a"
+                >
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity=".25"
+                    offset="0%"
+                  ></stop>
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity="0"
+                    offset="100%"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  fill="url(#a)"
+                  fill-rule="nonzero"
+                  d="M2.8.6h31.4v35.6H2.8z"
+                  transform="translate(2 1)"
+                ></path>
+                <g stroke-width="2">
+                  <path
+                    d="M5.7 5.7l29.6 29.6M5.7 35.3L35.3 5.7"
+                    stroke="#0069FF"
+                    opacity=".3"
+                  ></path>
+                  <path
+                    d="M2.1 36.2c0-2.7 3.6-5.3 3.6-5.3s3.6 2.7 3.6 5.3c0 2-1.6 3.6-3.6 3.6s-3.6-1.6-3.6-3.6zM31.8 36.2c0-2.7 3.6-5.3 3.6-5.3s3.6 2.7 3.6 5.3c0 2-1.6 3.6-3.6 3.6s-3.6-1.6-3.6-3.6zM2.1 6.5c0-2.7 3.6-5.3 3.6-5.3s3.6 2.7 3.6 5.3c0 2-1.6 3.6-3.6 3.6S2.1 8.5 2.1 6.5zM31.8 6.5c0-2.7 3.6-5.3 3.6-5.3S39 3.9 39 6.5c0 2-1.6 3.6-3.6 3.6s-3.6-1.6-3.6-3.6z"
+                    stroke="#120078"
+                    fill="#FFFFFF"
+                    fill-rule="nonzero"
+                  ></path>
+                  <path
+                    d="M14.5 21.9c0-4.5 6-8.9 6-8.9s6 4.5 6 8.9c0 3.3-2.7 6-6 6s-6-2.7-6-6z"
+                    stroke="#0069FF"
+                    fill="#FFFFFF"
+                    fill-rule="nonzero"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <h3>Cluster deployments</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+              aspernatur amet explicabo, ipsum nam voluptas.
+            </p>
+          </section>
+
+          <section>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient
+                  id="a"
+                  x1="50.055%"
+                  x2="50.055%"
+                  y1="2.475%"
+                  y2="96.438%"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#0069FF"
+                    stop-opacity=".3"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#0069FF"
+                    stop-opacity="0"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  d="M3 11.121v18.108l17.271 10.028L37.45 29.229V11.121L20.271 1.186z"
+                  opacity=".2"
+                ></path>
+                <path
+                  fill="url(#a)"
+                  fill-rule="nonzero"
+                  d="M0 22.936v5.293l17.271 10.028L34.45 28.229v-5.293L17.271 13z"
+                  transform="translate(3 1)"
+                ></path>
+                <path
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  d="M3 23.936v5.293l17.271 10.028L37.45 29.229v-5.293L20.271 14z"
+                ></path>
+                <path
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  d="M3 23.936l17.271 9.935 17.179-9.935"
+                ></path>
+                <path
+                  fill="#FFF"
+                  fill-rule="nonzero"
+                  stroke="#120078"
+                  stroke-width="2"
+                  d="M20.2714 7.7786S12.5643 13.4429 12.5643 19.2c0 4.2714 3.4357 7.7071 7.7071 7.7071 4.2715 0 7.7072-3.4357 7.7072-7.7071 0-5.5714-7.7072-11.4214-7.7072-11.4214z"
+                ></path>
+                <path
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  d="M3 11.4l17.271 9.936L37.45 11.4"
+                  opacity=".2"
+                ></path>
+              </g>
+            </svg>
+            <h3>Optimized compute types</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Explicabo, optio?
+            </p>
+          </section>
+
+          <section>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient
+                  x1="11.123%"
+                  y1="109.271%"
+                  x2="80.386%"
+                  y2="3.434%"
+                  id="a"
+                >
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity=".6"
+                    offset="0%"
+                  ></stop>
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity="0"
+                    offset="100%"
+                  ></stop>
+                </linearGradient>
+                <linearGradient
+                  x1="11.231%"
+                  y1="109.543%"
+                  x2="80.289%"
+                  y2="3.243%"
+                  id="b"
+                >
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity=".6"
+                    offset="0%"
+                  ></stop>
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity="0"
+                    offset="100%"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  fill="url(#a)"
+                  fill-rule="nonzero"
+                  opacity=".3"
+                  d="M24.93 12.96V.9H8.73v12.06z"
+                  transform="translate(3.5 2)"
+                ></path>
+                <path
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  opacity=".3"
+                  d="M28.414 2.876v12.06h-16.2V2.876z"
+                ></path>
+                <path
+                  fill="#FFFFFF"
+                  fill-rule="nonzero"
+                  d="M32.59 7.593v18.09H8.11V7.593z"
+                ></path>
+                <path
+                  fill="url(#b)"
+                  fill-rule="nonzero"
+                  d="M29.07 23.76V5.67H4.59v18.09z"
+                  transform="translate(3.5 2)"
+                ></path>
+                <path
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  d="M32.59 7.593v18.09H8.11V7.593z"
+                ></path>
+                <path
+                  stroke="#120078"
+                  stroke-width="2"
+                  fill="#FFFFFF"
+                  fill-rule="nonzero"
+                  d="M3.522 37.985v-25.2h33.66v25.2z"
+                ></path>
+                <g stroke="#120078" stroke-width="2">
+                  <path d="M20.33 20.81v9.09M15.74 25.4h9.18"></path>
+                </g>
+              </g>
+            </svg>
+            <h3>One-click apps</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              soluta sint unde tenetur repellendus quis exercitationem. Eius
+              sapiente quas nobis.
+            </p>
+          </section>
+
+          <section>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient
+                  x1="49.963%"
+                  y1="1.851%"
+                  x2="49.963%"
+                  y2="99.243%"
+                  id="a"
+                >
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity=".3"
+                    offset="0%"
+                  ></stop>
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity="0"
+                    offset="100%"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <g transform="translate(4.3 1)" fill="none" fill-rule="evenodd">
+                <circle
+                  fill="url(#a)"
+                  fill-rule="nonzero"
+                  cx="16.185"
+                  cy="22.815"
+                  r="16.185"
+                ></circle>
+                <ellipse
+                  fill="#FFFFFF"
+                  fill-rule="nonzero"
+                  cx="16.185"
+                  cy="22.815"
+                  rx="16.185"
+                  ry="6.143"
+                ></ellipse>
+                <path
+                  d="M0 22.815c0-3.413 7.215-6.143 16.185-6.143 8.97 0 16.185 2.73 16.185 6.143"
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  opacity=".4"
+                ></path>
+                <path
+                  d="M16.185 39c-3.412 0-6.142-7.215-6.142-16.185 0-8.97 2.73-16.185 6.142-16.185"
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  opacity=".4"
+                ></path>
+                <path
+                  d="M32.37 22.815c0 3.412-7.215 6.142-16.185 6.142C7.215 28.957 0 26.227 0 22.816"
+                  stroke="#0069FF"
+                  stroke-width="2"
+                ></path>
+                <path
+                  d="M16.185 6.63c3.413 0 6.143 7.215 6.143 16.185 0 8.97-2.73 16.185-6.143 16.185"
+                  stroke="#0069FF"
+                  stroke-width="2"
+                ></path>
+                <circle
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  cx="16.185"
+                  cy="22.815"
+                  r="16.185"
+                ></circle>
+                <g
+                  transform="translate(8.775)"
+                  stroke="#120078"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M14.332 6.923c0 5.167-6.922 10.237-6.922 10.237S.487 11.895.487 6.922C.487 3.12 3.607 0 7.41 0s6.922 3.12 6.922 6.923z"
+                    fill="#FFFFFF"
+                    fill-rule="nonzero"
+                  ></path>
+                  <circle cx="7.41" cy="7.02" r="2.34"></circle>
+                </g>
+              </g>
+            </svg>
+            <h3>Global availability</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium, quidem.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <section>
+        <h2>Designed for developers</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quod
+          nemo inventore cum eveniet! Distinctio ut inventore obcaecati officiis
+          minus?
+        </p>
+
+        <!-- "CAROUSEL" VIEW -->
+        <!-- TODO: Add left-arrow-icon < -->
+        <img
+          src="assets/img/jpg/screenshot-create-droplet-12336b41.jpg"
+          alt="create-droplet screenshot"
+        />
+        <!-- TODO: Add right-arrow-icon > -->
+        <h3>Create compute servers in 55 seconds or less</h3>
+        <!-- TODO: Add carousel img circle imitations oooo -->
+      </section>
+
+      <section>
+        <h2>The features your business needs</h2>
+
+        <!-- TODO: div as three-col-grid -->
+        <div>
+          <!-- subsections -->
+          <section>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              aria-hidden="true"
+              class="www-Icon www-Icon--xlarge bui-u-mb--regular"
+            >
+              <defs>
+                <linearGradient x1="50%" y1="100%" x2="50%" y2="50%" id="a">
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity=".3"
+                    offset="0%"
+                  ></stop>
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity="0"
+                    offset="100%"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  fill="url(#a)"
+                  fill-rule="nonzero"
+                  d="M34.6 38.5H8.4l-.2-7.8-7.8.3V.6h34.2z"
+                  transform="translate(3 1)"
+                ></path>
+                <path
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  d="M3 31.8h8.1V40"
+                ></path>
+                <path
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  opacity=".3"
+                  d="M3 14h35v11.9H3zM38 19.9H3"
+                ></path>
+                <path
+                  d="M9.1 8.1h8.4M25 32h6.7"
+                  stroke="#0069FF"
+                  stroke-width="2"
+                ></path>
+                <path
+                  d="M11.8 14.1V26M20.9 14.1V26"
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  opacity=".3"
+                ></path>
+                <path
+                  stroke="#0069FF"
+                  stroke-width="2"
+                  d="M38 14.9V1H3v30.8l8.1 8.2H38V13.2"
+                ></path>
+                <path stroke="#120078" stroke-width="2" d="M38 38.9V1H4"></path>
+              </g>
+            </svg>
+            <h3>Predictable pricing</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              dolorem reprehenderit inventore quos dolor porro.
+            </p>
+            <a href="#">Pricing ></a>
+          </section>
+
+          <section>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              aria-hidden="true"
+              class="www-Icon www-Icon--xlarge bui-u-mb--regular"
+            >
+              <defs>
+                <linearGradient
+                  x1="50.0205%"
+                  y1="90.8268%"
+                  x2="50.0205%"
+                  y2="5.825%"
+                  id="a"
+                >
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity=".6"
+                    offset="0%"
+                  ></stop>
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity="0"
+                    offset="100%"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <g fill-rule="nonzero">
+                  <path
+                    d="M6.3149 26.0723h-2V14.0404C4.3149 7.9286 9.2435 3 15.3553 3h10.2894C31.7565 3 36.685 7.9286 36.685 14.0404v11.2022c0 6.1118-4.9286 11.0404-11.0404 11.0404v-2c5.0073 0 9.0404-4.0332 9.0404-9.0404V14.0404C34.6851 9.0331 30.652 5 25.6447 5H15.3553C10.348 5 6.315 9.0331 6.315 14.0404v12.032z"
+                    fill="#0069FF"
+                  ></path>
+                  <path
+                    d="M3.0745 28.649C1.3605 28.649 0 27.2884 0 25.5744V19.6c0-1.714 1.3605-3.0745 3.0745-3.0745h3.3234V28.649H3.0745zm0-10.1235C2.465 18.5255 2 18.9905 2 19.6v5.9745c0 .6094.465 1.0744 1.0745 1.0744h1.3234v-8.1234H3.0745zM37.9255 16.5255C39.6395 16.5255 41 17.886 41 19.6v5.9745c0 1.714-1.3605 3.0744-3.0745 3.0744h-3.3234V16.5255h3.3234zm0 10.1234c.6094 0 1.0745-.465 1.0745-1.0744V19.6c0-.6094-.465-1.0745-1.0745-1.0745h-1.3234v8.1234h1.3234zM24.732 36.1915c.1944 0 .4106-.2161.4106-.4106v-1.2447c0-.2329-.1707-.4107-.4107-.4107h-7.966c-.2328 0-.4106.1707-.4106.4107v1.2447c0 .2328.1707.4106.4107.4106h7.966zm0 2h-7.966c-1.3632 0-2.4107-1.091-2.4107-2.4106v-1.2447c0-1.3632 1.0911-2.4107 2.4107-2.4107h7.966c1.3631 0 2.4106 1.0911 2.4106 2.4107v1.2447c0 1.299-1.1116 2.4106-2.4107 2.4106z"
+                    fill="#120078"
+                  ></path>
+                </g>
+                <g transform="translate(10.9574 9.8085)">
+                  <circle
+                    fill="url(#a)"
+                    fill-rule="nonzero"
+                    cx="9.5426"
+                    cy="9.2936"
+                    r="9.1277"
+                  ></circle>
+                  <path
+                    d="M9.7674 12.704c.5514-.366 1.1026-.7748 1.6132-1.213 1.353-1.1614 2.1407-2.297 2.1407-3.1931 0-.8249-.68-1.4894-1.4894-1.4894-.8248 0-1.4893.68-1.4893 1.4894h-2c0-.8249-.68-1.4894-1.4894-1.4894-.8249 0-1.4894.68-1.4894 1.4894 0 .8961.7878 2.0317 2.1407 3.193.5106.4383 1.0618.8471 1.6132 1.2132.0796.0528.1548.1019.2249.147.07-.0451.1452-.0942.2248-.147z"
+                    fill="#FFF"
+                  ></path>
+                  <path
+                    d="M9.7674 12.704c.5514-.366 1.1026-.7748 1.6132-1.213 1.353-1.1614 2.1407-2.297 2.1407-3.1931 0-.8249-.68-1.4894-1.4894-1.4894-.8248 0-1.4893.68-1.4893 1.4894h-2c0-.8249-.68-1.4894-1.4894-1.4894-.8249 0-1.4894.68-1.4894 1.4894 0 .8961.7878 2.0317 2.1407 3.193.5106.4383 1.0618.8471 1.6132 1.2132.0796.0528.1548.1019.2249.147.07-.0451.1452-.0942.2248-.147zm2.2645-7.8955c1.9038 0 3.4894 1.5495 3.4894 3.4894 0 1.645-1.0793 3.201-2.838 4.7106-.5785.4966-1.1942.9532-1.8097 1.3618-.371.2463-.663.424-.838.5231l-.493.2794-.493-.2794c-.175-.0991-.467-.2768-.838-.523-.6156-.4087-1.2312-.8653-1.8097-1.3619C4.643 11.499 3.5639 9.943 3.5639 8.298c0-1.9038 1.5494-3.4894 3.4893-3.4894.9674 0 1.8526.4001 2.4894 1.0482.6311-.6445 1.5105-1.0482 2.4893-1.0482z"
+                    fill="#120078"
+                    fill-rule="nonzero"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <h3>World-class service</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              dolorem reprehenderit inventore quos dolor porro.
+            </p>
+            <a href="#">Support ></a>
+          </section>
+
+          <section>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              aria-hidden="true"
+              class="www-Icon www-Icon--xlarge bui-u-mb--regular"
+            >
+              <defs>
+                <linearGradient
+                  x1="50%"
+                  y1="1.661%"
+                  x2="50%"
+                  y2="97.435%"
+                  id="a"
+                >
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity=".424"
+                    offset="0%"
+                  ></stop>
+                  <stop
+                    stop-color="#0069FF"
+                    stop-opacity="0"
+                    offset="100%"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M17.5 40C7.6 36.5.8 30 .8 20.4V7.9L17.5 1l16.7 6.9v12.5c.1 9.6-7 16.1-16.7 19.6z"
+                  fill="url(#a)"
+                  fill-rule="nonzero"
+                  transform="translate(3)"
+                ></path>
+                <path
+                  d="M20.5 2.2L36 8.6v11.8c.1 10.7-9.4 16.1-15.5 18.5C7.7 34.1 5 26.2 5 20.4V8.6l15.5-6.4zm0-2.2L3 7.3v13.1c0 10 7.1 16.9 17.5 20.6C30.7 37.3 38.1 30.4 38 20.4V7.3L20.5 0z"
+                  fill="#0069FF"
+                  fill-rule="nonzero"
+                ></path>
+                <path
+                  d="M20.5 32.6c-5.6-2-10.4-5.7-10.4-11.8v-8.7l10.4-4.2 10.4 4.2v8.7c0 6.2-4.9 9.9-10.4 11.8z"
+                  stroke="#120078"
+                  stroke-width="2"
+                  fill="#FFFFFF"
+                  fill-rule="nonzero"
+                ></path>
+                <path
+                  stroke="#120078"
+                  stroke-width="2"
+                  d="M16.1 19.3l3.3 3.4 5.6-5.8"
+                ></path>
+              </g>
+            </svg>
+            <h3>Reliable platform</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              dolorem reprehenderit inventore quos dolor porro.
+            </p>
+            <a href="#">Security ></a>
+          </section>
+        </div>
+      </section>
+
+      <!-- TODO: Think of how to layout Section-six -->
+      <section>
+        <h2>Service your customers around the world from 12 regions.</h2>
+
+        <table class="first">
+          <tbody>
+            <tr>
+              <td>AMS2</td>
+              <td>Amsterdam, Netherlands</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+            <tr>
+              <td>AMS3</td>
+              <td>Amsterdam, Netherlands</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+            <tr>
+              <td>BLR1</td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+            <tr>
+              <td>FRA1</td>
+              <td>Frankfurt, German</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+            <tr>
+              <td>LON1</td>
+              <td>London, UK</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+            <tr>
+              <td>NYC1</td>
+              <td>New York, USA</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="second">
+          <tbody>
+            <tr>
+              <td>AMS2</td>
+              <td>Amsterdam, Netherlands</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+            <tr>
+              <td>AMS3</td>
+              <td>Amsterdam, Netherlands</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+            <tr>
+              <td>BLR1</td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+            <tr>
+              <td>FRA1</td>
+              <td>Frankfurt, German</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+            <tr>
+              <td>LON1</td>
+              <td>London, UK</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+            <tr>
+              <td>NYC1</td>
+              <td>New York, USA</td>
+              <td><a href="#">Test speed ></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Development teams love DigitalOcean</h2>
+
+        <!-- "CAROUSEL" VIEW -->
+        <!-- TODO: Add left-arrow-icon < -->
+        <!-- TODO: Do the screenshot of the img and add to assets. -->
+        <img
+          src="assets/img/png/testimonial-screenshot.png"
+          alt="testimonial screenshot"
+        />
+        <!-- TODO: Add right-arrow-icon > -->
+        <!-- TODO: Add carousel img circle-imitations ooo -->
+      </section>
+
+      <section>
+        <h2>Get started now</h2>
+        <!-- TODO: Style a as a button -->
+        <a href="#sign-up-form">Create your account</a>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+        >
+          <title>DigitalOcean home</title>
+          <g fill="#0080FF" fill-rule="evenodd">
+            <path
+              d="M24.9153 50v-9.661c10.226 0 18.1638-10.1413 14.2372-20.904-1.4406-3.983-4.6327-7.1751-8.6158-8.6158C19.774 6.921 9.6327 14.8305 9.6327 25.0565H0C0 8.7571 15.7627-3.9548 32.8531 1.3842c7.4576 2.3446 13.418 8.2768 15.7345 15.7344C53.9266 34.2373 41.2429 50 24.9153 50"
+            ></path>
+            <path
+              d="M15.339 40.3672h9.6045v-9.6045H15.339zM7.9379 47.7684h7.401v-7.4012H7.938zM1.7514 40.3672H7.938v-6.1864H1.7514z"
+            ></path>
+          </g>
+        </svg>
+
+        <p>&#169; 2018 DigitalOcean, LLDC. All rights reserved.</p>
+        <p>Proudly made in NY</p>
+
+        <!-- Social icons from icons.getbootstrap.com -->
+        <div class="social-icons">
+          <a href="#">
+            <i class="bi-twitter" role="img" aria-label="twitter"></i>
+          </a>
+          <a href="#">
+            <i class="bi-facebook" role="img" aria-label="facebook"></i>
+          </a>
+          <a href="#"
+            ><i class="bi-instagram" role="img" aria-label="instagram"></i
+          ></a>
+          <a href="#"
+            ><i class="bi-youtube" role="img" aria-label="youtube"></i
+          ></a>
+          <a href="#"
+            ><i class="bi-linkedin" role="img" aria-label="linkedin"></i
+          ></a>
+        </div>
+      </div>
+
+      <section>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Partner Network</a></li>
+          <li><a href="#">Referal Program</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Legal & Security</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Products</h3>
+        <ul>
+          <li><a href="#">Droplets</a></li>
+          <li><a href="#">Spaces</a></li>
+          <li><a href="#">Kubernetes</a></li>
+          <li><a href="#">Load Balancers</a></li>
+          <li><a href="#">Block Storage</a></li>
+          <li><a href="#">Tools & Integrations</a></li>
+          <li><a href="#">One-Click Apps</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Release notes</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Community</h3>
+        <ul>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Meetups</a></li>
+          <li><a href="#">Q&A</a></li>
+          <li><a href="#">Write for Donations</a></li>
+          <li><a href="#">Droplets for Demos</a></li>
+          <li><a href="#">Hatch</a></li>
+          <li><a href="#">Shop Swag</a></li>
+          <li><a href="#">Research Program</a></li>
+          <li><a href="#">Currents Research</a></li>
+          <li><a href="#">Open Source</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Contact support</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Network Status</a></li>
+        </ul>
+      </section>
+
+      <!-- TODO: Add shark img at the right bottom corner -->
+      <div>
+        <!-- shark's message -->
+        <p>Can I help answer any questions you have about DigitalOcean?</p>
+        <img src="" alt="shark avatar" />
+        <!-- TODO: <p> position:absolute over the shark-img right-top corner -->
+        <p>2</p>
+      </div>
+    </footer>
+  </body>
 </html>
