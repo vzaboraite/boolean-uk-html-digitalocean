@@ -122,6 +122,10 @@ a {
   width: 150px;
 }
 
+.rounded-corners-sm {
+  border-radius: 0.25rem;
+}
+
 .rounded-corners-md {
   border-radius: 0.5rem;
 }
@@ -284,4 +288,17 @@ table tr {
 
 table td {
   padding: 0.5rem;
+}
+
+#call-section {
+  padding: 3rem;
+}
+
+#call-section h2 {
+  margin-bottom: 2rem;
+}
+
+#call-section a {
+  padding: 1rem;
+  font-size: 0.875rem;
 }
