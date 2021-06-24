@@ -1,0 +1,103 @@
+/* Reset styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  margin: 0;
+
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Remove default from navigation */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation styles */
+
+.nav-list ul {
+  height: 100%;
+
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.825rem;
+}
+
+.nav-list a,
+.nav-list a:visited {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.nav-list a:hover {
+  color: blue;
+}
+
+/* Layout styles */
+
+.center {
+  max-width: 1000px;
+
+  margin: 0 auto;
+  padding: 0 1.825rem;
+}
+
+/* Grid styles */
+
+.three-column-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.825rem;
+}
+
+.align-items__center {
+  display: grid;
+  align-items: center;
+}
+
+/* Header styles */
+
+.main-header {
+  height: 60px;
+}
+
+.main-header a {
+  font-size: 0.825rem;
+}
+
+.navigation-wrapper {
+  height: 100%;
+}
+
+.logo {
+  width: 150px;
+}
+
+.button {
+  padding: 0.25rem 1rem;
+
+  border-radius: 0.25rem;
+}
+
+.blue-button {
+  border: 1px solid blue;
+
+  color: blue;
+}
