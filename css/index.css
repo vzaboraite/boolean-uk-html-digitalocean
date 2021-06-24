@@ -107,6 +107,11 @@ a {
   place-items: center;
 }
 
+.place-content__center {
+  display: grid;
+  place-content: center;
+}
+
 /* Utility styles */
 
 .sm-logo {
@@ -233,11 +238,12 @@ h1 {
 }
 
 #products-section img,
-#testimonials img {
+#testimonials-section img {
   width: 500px;
 }
 
-#products-section {
+#products-section,
+#testimonials-section {
   padding: 2rem;
 }
 
