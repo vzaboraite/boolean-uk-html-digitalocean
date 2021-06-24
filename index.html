@@ -14,10 +14,9 @@
     <title>Digital Ocean</title>
   </head>
   <body>
-    <!-- TODO: header as a three-col-grid -->
     <header class="main-header">
       <div class="center three-column-grid navigation-wrapper">
-        <div class="logo align-items__center">
+        <div class="md-logo align-items__center">
           <img src="assets/img/png/logo.png" alt="DigitalOcean logo" />
         </div>
         <nav class="nav-list">
@@ -37,7 +36,7 @@
             <!-- TODO: Support nav as dropdown or just add down-arrow-icon v -->
             <li><a href="#">Support</a></li>
             <li><a href="#">Login</a></li>
-            <!-- TODO: Style Sign Up as a button -->
+
             <li><a class="button blue-button" href="#">Sign Up</a></li>
           </ul>
         </nav>
@@ -46,49 +45,58 @@
 
     <main>
       <!-- TODO: Section-one as two-col-grid -->
-      <section>
-        <h1>The simplest cloud platform for developers & teams</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia
-          eos harum cum a soluta! Rem, modi? Est consequatur rem exercitationem
-          delectus blanditiis, neque adipisci, sint ratione commodi vero non.
-        </p>
-
-        <form id="sign-up-form">
-          <label for="email" name="email"></label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            required
-          />
-
-          <label for="password" name="password"></label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            minlength="6"
-            maxlength="12"
-            placeholder="Password"
-            required
-          />
-
-          <div class="action-buttons">
-            <button type="submit">Create your account</button>
-            <button type="submit">
-              <a href="#">
-                <img src="assets/img/png/google-icon.png" alt="Google icon" />
-                Sign up with google
-              </a>
-            </button>
+      <section id="hero-section">
+        <div>
+          <div>
+            <h1>The simplest cloud platform for developers & teams</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              quia eos harum cum a soluta! Rem, modi? Est consequatur rem
+              exercitationem delectus blanditiis, neque adipisci, sint ratione
+              commodi vero non.
+            </p>
           </div>
 
-          <p>
-            By signing up you agree to the <a href="#">Terms of Service</a>.
-          </p>
-        </form>
+          <form id="sign-up-form">
+            <label for="email" name="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+
+            <label for="password" name="password"></label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="6"
+              maxlength="12"
+              placeholder="Password"
+              required
+            />
+
+            <div class="action-buttons button align-items__center">
+              <button type="submit">Create your account</button>
+              <button type="submit">
+                <a href="#">
+                  <img
+                    class="sm-logo"
+                    src="assets/img/png/google-icon.png"
+                    alt="Google icon"
+                  />
+                  Sign up with google
+                </a>
+              </button>
+            </div>
+
+            <p>
+              By signing up you agree to the <a href="#">Terms of Service</a>.
+            </p>
+          </form>
+        </div>
       </section>
 
       <!-- TODO: Think of the imgs layout -->
@@ -97,22 +105,27 @@
 
         <!-- TODO: google and add logos to assets -->
         <img
+          class="md-logo"
           src="assets/img/png/company-logos/docker-logo.png"
           alt="Docker logo"
         />
         <img
+          class="md-logo"
           src="assets/img/png/company-logos/gitlab-logo-gray-rgb.png"
           alt="GitLab logo"
         />
         <img
+          class="md-logo"
           src="assets/img/png/company-logos/Slack-Logo.png"
           alt="Slack logo"
         />
         <img
+          class="md-logo"
           src="assets/img/png/company-logos/hashicorp-logo.png"
           alt="HashiCorp logo"
         />
         <img
+          class="md-logo"
           src="assets/img/png/company-logos/Splunk_logo.png"
           alt="Splunk logo"
         />
@@ -471,7 +484,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="products">
         <h2>Designed for developers</h2>
 
         <p>
@@ -773,7 +786,7 @@
         </table>
       </section>
 
-      <section>
+      <section id="testimonials">
         <h2>Development teams love DigitalOcean</h2>
 
         <!-- "CAROUSEL" VIEW -->
