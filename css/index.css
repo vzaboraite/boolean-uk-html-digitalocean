@@ -134,6 +134,10 @@ a {
   background-color: rgb(248, 240, 240);
 }
 
+.bg-blue {
+  background-color: blue;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -144,6 +148,10 @@ a {
 
 .blue-text {
   color: blue;
+}
+
+.lt-blue-text {
+  color: lightskyblue;
 }
 
 .grey-text {
@@ -187,8 +195,6 @@ a {
 /* Main styles */
 
 #hero-section {
-  background-color: blue;
-
   padding: 2rem 0;
 }
 
@@ -258,4 +264,24 @@ h1 {
 
 .features-offer h2 {
   margin-bottom: 3rem;
+}
+
+#service-section {
+  padding: 3rem;
+}
+
+#service-section h2 {
+  margin-bottom: 2rem;
+}
+
+table {
+  border-spacing: 0;
+}
+
+table tr {
+  font-size: 0.875rem;
+}
+
+table td {
+  padding: 0.5rem;
 }
