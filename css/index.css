@@ -232,7 +232,16 @@ h1 {
   font-size: 0.825rem;
 }
 
-#products img,
+#products-section img,
 #testimonials img {
   width: 500px;
+}
+
+#products-section {
+  padding: 2rem;
+}
+
+#products-section h2,
+#products-section p {
+  margin-bottom: 2rem;
 }
