@@ -61,6 +61,18 @@ nav ul {
 
 /* Grid styles */
 
+.two-column-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.two-column-grid__three-and-two {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1.5rem;
+}
+
 .three-column-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -70,6 +82,32 @@ nav ul {
 .align-items__center {
   display: grid;
   align-items: center;
+}
+
+/* Utility styles */
+
+.sm-logo {
+  width: 20px;
+}
+
+.md-logo {
+  width: 150px;
+}
+
+.rounded-corners-md {
+  border-radius: 0.5rem;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.text-align__center {
+  text-align: center;
 }
 
 /* Header styles */
@@ -98,17 +136,40 @@ nav ul {
   color: blue;
 }
 
-/* Utility styles */
-
-.sm-logo {
-  width: 20px;
-}
-
-.md-logo {
-  width: 150px;
+.white-text {
+  color: white;
 }
 
 /* Main styles */
+
+#hero-section {
+  background-color: blue;
+
+  padding: 2rem 0;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 1rem;
+
+  font-size: 3rem;
+}
+
+.signup-form {
+  padding: 1rem;
+}
+
+.signup-form input,
+.signup-form button {
+  display: block;
+
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.signup-form button a {
+  text-decoration: none;
+}
 
 #products img,
 #testimonials img {

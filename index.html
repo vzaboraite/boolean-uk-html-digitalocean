@@ -46,8 +46,8 @@
     <main>
       <!-- TODO: Section-one as two-col-grid -->
       <section id="hero-section">
-        <div>
-          <div>
+        <div class="center two-column-grid__three-and-two">
+          <div class="white-text">
             <h1>The simplest cloud platform for developers & teams</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
@@ -57,8 +57,11 @@
             </p>
           </div>
 
-          <form id="sign-up-form">
-            <label for="email" name="email"></label>
+          <form class="signup-form bg-white rounded-corners-md">
+            <h2 class="text-align__center">
+              Deploy your app in seconds. <br />
+              <span class="blue-text"> Get started now. </span>
+            </h2>
             <input
               type="email"
               name="email"
@@ -67,7 +70,6 @@
               required
             />
 
-            <label for="password" name="password"></label>
             <input
               type="password"
               name="password"
@@ -77,22 +79,20 @@
               placeholder="Password"
               required
             />
+            <button type="submit">Create your account</button>
+            <!-- TODO: Work on aligning logo and text in the button -->
+            <button type="submit">
+              <a href="#">
+                <img
+                  class="sm-logo"
+                  src="assets/img/png/google-icon.png"
+                  alt="Google icon"
+                />
+                Sign up with google
+              </a>
+            </button>
 
-            <div class="action-buttons button align-items__center">
-              <button type="submit">Create your account</button>
-              <button type="submit">
-                <a href="#">
-                  <img
-                    class="sm-logo"
-                    src="assets/img/png/google-icon.png"
-                    alt="Google icon"
-                  />
-                  Sign up with google
-                </a>
-              </button>
-            </div>
-
-            <p>
+            <p class="blue-text">
               By signing up you agree to the <a href="#">Terms of Service</a>.
             </p>
           </form>
