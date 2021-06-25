@@ -1,0 +1,65 @@
+/* Utility styles */
+
+.sm-logo {
+  width: 20px;
+}
+
+.md-logo {
+  width: 150px;
+}
+
+.rounded-corners-sm {
+  border-radius: 0.25rem;
+}
+
+.rounded-corners-md {
+  border-radius: 0.5rem;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-light-grey {
+  background-color: rgb(248, 240, 240);
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-light-blue {
+  background-color: lightblue;
+}
+
+.bg-navy {
+  background-color: navy;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.white-text {
+  color: white;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.lt-blue-text {
+  color: lightskyblue;
+}
+
+.grey-text {
+  color: grey;
+}
+
+.text-align__center {
+  text-align: center;
+}
+
+.line-height__three {
+  line-height: 3rem;
+}

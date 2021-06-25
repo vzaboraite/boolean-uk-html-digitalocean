@@ -1,0 +1,28 @@
+/* Layout styles */
+
+.center {
+  max-width: 1000px;
+
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.align-items__center {
+  align-items: center;
+}
+
+.justify-content__flex-start {
+  justify-content: flex-start;
+}
+
+.justify-items__center {
+  justify-items: center;
+}
+
+.place-items__center {
+  place-items: center;
+}
+
+.place-content__center {
+  place-content: center;
+}
