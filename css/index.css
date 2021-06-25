@@ -148,6 +148,10 @@ a {
   background-color: blue;
 }
 
+.bg-light-blue {
+  background-color: lightblue;
+}
+
 .bg-navy {
   background-color: navy;
 }
@@ -229,6 +233,16 @@ h1 {
 
   width: 100%;
   margin-bottom: 0.5rem;
+
+  border: none;
+}
+
+.signup-form input {
+  box-shadow: 0 0 3px lightgray;
+}
+
+.signup-form button {
+  box-shadow: 1px 1px 3px lightgray;
 }
 
 #customer-section {
