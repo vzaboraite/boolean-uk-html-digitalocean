@@ -292,6 +292,14 @@ table {
   border-spacing: 0;
 }
 
+table tr td {
+  border-bottom: 1px solid white;
+}
+
+table tr:last-child td {
+  border: none;
+}
+
 table tr {
   font-size: 0.875rem;
 }
